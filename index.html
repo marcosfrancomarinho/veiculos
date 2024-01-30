@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2554/2554936.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+    <title>CADASTRO DE AUTOMÓVEIS</title>
+</head>
+
+<body>
+    <header>
+        <h1>CADASTRO DE VEÍCULOS</h1>
+    </header>
+    <main>
+        <section class="register">
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="doors">Portas:</label>
+                <input type="number" name="doors" id="doors" required>
+                <label for="shield" class="hide">Blindagem:</label>
+                <input type="number" name="shield" id="shield" class="hide" required>
+                <label for="ammunition" class="hide">Munição:</label>
+                <input type="number" name="ammunition" id="ammunition" class="hide" required>
+                <div class="type">
+                    <p>Tipo:</p>
+                    <label for="military">Militar</label>
+                    <input type="radio" name="type" id="military">
+                    <label for="normal">Normal</label>
+                    <input type="radio" name="type" checked id="normal">
+                </div>
+                <button class="btn-add">Adicionar</button>
+            </form>
+        </section>
+        <section class="result">
+        </section>
+    </main>
+    <div class="btn-clear-all">Limpar Tudo</div>
+    <div class="card">
+        <p>Deseja Editar ou Deletar este Item?</p>
+        <div class="btn">
+            <button class="delete">Deletar</button>
+            <button class="edit">Editar</button>
+        </div>
+        <button class="close">X</button>
+    </div>
+</body>
+
+</html>
